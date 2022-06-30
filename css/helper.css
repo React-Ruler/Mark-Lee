@@ -1,0 +1,253 @@
+/* Font Declaration */
+
+@font-face {
+  font-family: Inter, sans-serif;
+  src: url(../assets/font/Inter/static/Inter-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Inter, sans-serif;
+  src: url(../assets/font/Inter/static/Inter-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Inter, sans-serif;
+  src: url(../assets/font/Inter/static/Inter-ExtraBold.ttf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: Inter, sans-serif;
+  src: url(../assets/font/Inter/static/Inter-ExtraLight.ttf);
+  font-weight: 200;
+}
+@font-face {
+  font-family: Inter, sans-serif;
+  src: url(../assets/font/Inter/static/Inter-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: Inter, sans-serif;
+  src: url(../assets/Inter/static/Inter-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Inter, sans-serif;
+  src: url(../assets/font/Inter/static/Inter-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: Inter, sans-serif;
+  src: url(../assets/font/Inter/static/Inter-Thin.ttf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Inter, sans-serif;
+  src: url(../assets/font/Inter/static/Inter-Black.ttf);
+  font-weight: 900;
+}
+
+/* CSS Helper */
+.logo-text {
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #000;
+  fill: #000;
+  letter-spacing: 0.01em;
+}
+
+.logo-text a {
+  text-decoration: none;
+}
+
+.logo-text a:active {
+  text-decoration: none;
+  color: #000;
+}
+.logo-text a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+h1.title {
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 54px;
+  color: #000;
+  fill: #000;
+  letter-spacing: 0em;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+h4.header-title-text {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  fill: #000;
+  letter-spacing: 0em;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+h4.social-title-text {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  fill: #000;
+  letter-spacing: 0em;
+  line-height: 1.2em;
+  text-align: center;
+}
+.breadcrumb {
+  font-family: Inter, sans-serif;
+  font-weight: 300;
+  color: black;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: black;
+}
+
+.breadcrumb a:active {
+  text-decoration: underline;
+  color: black;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.navbar-item {
+  font-family: Inter, sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  color: #000;
+  fill: #000;
+  letter-spacing: 0.2em;
+  overflow: hidden;
+  text-indent: 0.02em;
+}
+
+.navbar-item a {
+  text-decoration: underline;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar-item a:active {
+  text-decoration: none;
+}
+
+.navbar-item a:hover {
+  text-decoration: underline;
+}
+
+.footer-copy-text {
+  font-family: Inter, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: #000;
+  fill: #000;
+  letter-spacing: 0em;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+.footer-copy-text a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-copy-text a:active {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-copy-text a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+/* Mobile Menu */
+
+.mobile-menu {
+  color: #fcfcfc;
+  -webkit-animation: menuAnimation 300ms ease;
+  animation: menuAnimation 300ms ease;
+}
+
+@-webkit-keyframes menuAnimation {
+  0% {
+    margin-top: -100px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+@keyframes menuAnimation {
+  0% {
+    margin-top: -100px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+
+/* Gallery Animation */
+figure {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all ease 300ms;
+  transition: all ease 300ms;
+}
+
+figure span {
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fcfcfc;
+  display: none;
+  text-align: center;
+  -webkit-transition: all ease 300ms;
+  transition: all ease 300ms;
+}
+
+figure,
+img {
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: all ease 300ms;
+  transition: all ease 300ms;
+}
+
+figure:hover img {
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+}
+
+figure:hover span {
+  display: block;
+}
